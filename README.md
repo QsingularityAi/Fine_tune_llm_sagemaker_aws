@@ -1,15 +1,24 @@
-# Fine-tune LLM SageMaker AWS
-
-This project focuses on fine-tuning Language Models (LLMs) on Amazon SageMaker to create custom embedding models.
-
 ## Project Structure
+
+```mermaid
+graph LR
+    subgraph "Fine_tune_llm_sagemaker_aws"
+        README.md
+        LICENSE
+        Fine_Tune_Custom_embedding_models("Fine Tune Custom embedding models/")
+        subgraph "Fine Tune Custom embedding models/"
+            FineTuneEmbedding.ipynb
+            training.json
+        end
+    end
+    style Fine_Tune_Custom_embedding_models fill:#f9f,stroke:#333,stroke-width:2px
+```
 
 - **Fine Tune Custom embedding models/**: This directory contains the code and data for fine-tuning custom embedding models.
     - **FineTuneEmbedding.ipynb**: Jupyter Notebook containing the code for fine-tuning embedding models.
     - **training.json**: JSON file likely containing the training data for fine-tuning.
 - **LICENSE**:  Project license file.
 - **README.md**: Project description and instructions (this file).
-- **.git/**: Git repository directory (if initialized).
 
 ## Overview
 
